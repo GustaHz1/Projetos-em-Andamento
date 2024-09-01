@@ -1,0 +1,1 @@
+# O models é onde trabalhamos com o banco de dados no nosso site
