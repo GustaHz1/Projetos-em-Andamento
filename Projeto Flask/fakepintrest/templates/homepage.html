@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="UTF-8" />
+        <title>{%block titulo %}
+            FakePintrest
+            {% endblock %}
+        </title>
+    </head>
+
+{% block body %}
+    <body>
+    <h1>FakePintrest</h1>
+
+    
+    <!--Ao declarar um metodo em especial o post, dizemos que ele ira retornar informação-->
+    <!--Para trabalhar com variaveis de Python em HTMl devemos colocar entre chaves-->
+    {% block formulario %}
+    <form method="POST">
+        <!--Sempre ao trazer um formulário de um arquivo PYthon para HTML devemos declarar o csrf_token-->
+        {{form.csrf_token}}
+    
+        {{form.email.label()}}
+        {{form.email()}}
+    
+        {{form.senha.label()}}
+        {{form.senha()}}
+    
+        {{form.button()}}
+    
+        </form>
+    {% endblock %}
+    
+   
+    </body>
+{% endblock %}
+</html>
