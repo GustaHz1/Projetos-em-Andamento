@@ -1,0 +1,29 @@
+body {
+    background-color: whitesmoke; /* Cor de fundo */
+    font-family: Calibri, sans-serif; /* Fonte */
+    color: #333; /* Cor do texto */
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo do título */
+h1 {
+    color: #0056b3;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Estilo dos parágrafos */
+p {
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: center;
+    margin: 20px;
+}
+
+h2 {
+    color: black;
+    background-color: #0056b3;
+    text-align: center;
+    margin-top: 20px;
+}
